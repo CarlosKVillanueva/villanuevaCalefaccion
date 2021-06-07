@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="background-color: rgb(170, 170, 170);" lang="en">
+<html style="background-color: rgb(170, 170, 170);" lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -23,31 +23,37 @@
             <img style="max-width: 200px;" src="img/logoVillanuevaCalefaccion.png" alt="Logo Villanueva Calefacción">
         </a>
         <nav>
-            <a href="index.html">Inicio</a>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="servicios.html">
-                <ul>
-                    <li>Servicios
-                        <ul>
-                            <a href="radiadores.html">
-                                <li>Radiadores</li>
-                            </a>
-                            <a href="pisoRadiante.html">
-                                <li>Piso Radiante</li>
-                            </a>
-                            <a href="instalacionCalderas.html">
-                                <li>Instalacion Calderas</li>
-                            </a>
-                            <a href="servicioTecnico.html">
-                                <li>Servicio Tecnico</li>
-                            </a>
-
-                        </ul>
-                    </li>
-                </ul>
-            </a>
-            <a href="contacto.html">Contacto</a>
-
+            <ul>
+                <a href="index.html">
+                    <li>Inicio</li>
+                </a>
+                <a href="nosotros.html">
+                    <li>Nosotros</li>
+                </a>
+                <a href="servicios.html">
+                    <ul>
+                        <li>Servicios
+                            <ul>
+                                <a href="radiadores.html">
+                                    <li>Radiadores</li>
+                                </a>
+                                <a href="pisoRadiante.html">
+                                    <li>Piso Radiante</li>
+                                </a>
+                                <a href="instalacionCalderas.html">
+                                    <li>Instalacion Calderas</li>
+                                </a>
+                                <a href="servicioTecnico.html">
+                                    <li>Servicio Tecnico</li>
+                                </a>
+                            </ul>
+                        </li>
+                    </ul>
+                </a>
+                <a href="contacto.html">
+                    <li>Contacto</li>
+                </a>
+            </ul>
             <a href="https://www.facebook.com/">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -192,7 +198,7 @@
                         </div>
                         <div>
                             <label for="name">Nombre</label>
-                            <input type="text" placeholder="Tu Nombre" name="" id="name">
+                            <input type="text" placeholder="Tu Nombre" name="" id="name" required autofocus>
                         </div>
                         <div>
                             <label for="country">País</label>
@@ -207,16 +213,16 @@
                         </div>
                         <div>
                             <label for="telefono">Teléfono</Label>
-                            <input type="text" placeholder="Tu Teléfono" id="telefono">
+                            <input type="text" placeholder="Tu Teléfono" id="telefono" required>
                         </div>
 
                         <div>
                             <label for="email">Correo Electrónico</label>
-                            <input type="email" placeholder="Tu Correo Electrónico" id="email">
+                            <input type="email" placeholder="Tu Correo Electrónico" id="email" required>
                         </div>
                         <div>
                             <label for="check">Suscribite a nuestro Newsletter</label>
-                            <input name="check" type="checkbox">
+                            <input name="check" id="check" type="checkbox">
                         </div>
                         <div>
                             <label for="textarea">Mensaje</label>
@@ -226,7 +232,7 @@
                             <button>Limpiar Formulario</button>
                         </div>
                         <div>
-                            <button>Enviar</button>
+                            <input name="enviar" type="submit" value="Enviar">
                         </div>
 
                     </div>
