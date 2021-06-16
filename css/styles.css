@@ -1,0 +1,204 @@
+/*--GLOBALES--*/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*,
+:after {
+    box-sizing: inherit;
+}
+
+
+/*--HEADER--*/
+.header {
+    background-color: #2b2b2b;
+}
+
+.logoIndex {
+    max-height: 10rem;
+}
+.header a {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-decoration:none ;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+
+.navegacion ul li a {
+    list-style-type: none;
+    text-decoration:none;
+}
+
+.servicios {
+    list-style-type: none;
+}
+
+
+/*--MAIN--*/
+
+.imagenCarrousel {
+    display: block;
+    margin: 0 auto;
+}
+
+.nuestrosServicios {
+    background-color: #2b2b2b;
+    font-family: 'Roboto';
+    color: white;
+    text-align: center;
+}
+
+.nuestrosServicios h2 {
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-family: 'Roboto';
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+.nuestrosServicios p {
+    font-size: 2rem;
+    font-family: 'Poppins';
+    padding: 1rem;
+    margin:0;
+}
+
+.contenedorServicios {
+    margin-bottom: 1rem;
+}
+
+
+.nosotros {
+    text-align: center;
+    font-family: 'Poppins';
+    color: #2b2b2b;
+    background-color: white;
+}
+
+.nosotrosTitulo {
+    font-weight: 400;
+    margin: 0;
+    padding: 1rem;
+    font-size: 3rem;
+    
+}
+.nosotrosTitulo span {
+    font-weight: 700;
+}
+
+.nosotrosParrafo {
+    font-size: 1.8rem;
+}
+
+.imagenNosotros {
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+
+.marcas {
+    background-color:#2b2b2b;
+    padding-bottom: 2rem;
+}
+.marcas h2 {
+    font-size: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    padding:2rem;
+    font-family: 'Poppins';
+    font-weight: 300;
+    color: white;
+    
+}
+.marcas span {
+    font-weight: 700;
+}
+
+.marcas img {
+
+    display: block;
+    margin: 0 auto 2rem auto;
+    background-color: white;
+}
+
+
+
+
+/*--FORMULARIO--*/
+
+
+.formulario {
+    background-color: white;
+    padding: 2rem;
+    margin: 0 auto;
+    color: #2b2b2b;
+}
+.formulario fieldset {
+    border: none;
+    margin: 0;
+}
+
+.formulario legend {
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #2b2b2b;
+}
+.campo {
+    padding: .5rem;
+    color: #2b2b2b;
+    max-width: 100%;
+    font-size: 2rem;
+}
+
+
+/*--FOOTER--*/
+
+.footer {
+    background-color: #2b2b2b;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+}
+
+.footer svg {
+    color: white;
+}
+
+.parrafoFooter {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
