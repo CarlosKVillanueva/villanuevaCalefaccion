@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="background-color: rgb(170, 170, 170);" lang="es">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,54 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Villanueva Calefacción</title>
     <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/f26eec53aa.js" crossorigin="anonymous"></script>
 </head>
+
 
 <body>
 
     <header class="header">
-        <div class="navegacion">
+
+        <div class="containerNav">
+
             <a href="../index.html">
                 <img class="logoIndex" src="../img/logoVillanuevaCalefaccion.png" alt="Logo Villanueva Calefacción">
             </a>
+
+
             <nav class="navegacion">
-                <ul class="ulNavegacion">
-                    <a href="../index.html">
-                        <li>Inicio</li>
-                    </a>
-                    <a href="nosotros.html">
-                        <li>Nosotros</li>
-                    </a>
-                    <a href="servicios.html">
-                        <ul>
-                            <li class="servicios">Servicios
-                                <ul>
-                                    <a href="radiadores.html">
-                                        <li>Radiadores</li>
-                                    </a>
-                                    <a href="pisoRadiante.html">
-                                        <li>Piso Radiante</li>
-                                    </a>
-                                    <a href="instalacionCalderas.html">
-                                        <li>Instalacion Calderas</li>
-                                    </a>
-                                    <a href="servicioTecnico.html">
-                                        <li>Servicio Tecnico</li>
-                                    </a>
+
+                <ul class="menuNavegacion">
+
+                    <li><a href="../index.html"></i>Inicio</a></li>
+                    <li><a href="servicios.html">Servicios<i class="fas fa-caret-down"></i></a>
+
+                        <ul class="submenuServicios">
+
+                            <li><a href="radiadores.html">Radiadores</a></li>
+                            <li><a href="pisoRadiante.html">Pisos Radiantes</a></li>
+                            <li><a href="servicioTecnico.html">Servicio Tecnico</a></li>
+                            <li><a href="instalacionCalderas.html">Instalacion de Calderas<i
+                                        class="fas fa-caret-right"></i></a>
+
+                                <ul class="submenuCalderas">
+
+                                    <li><a href="calderaMural.html">Calderas Murales</a></li>
+                                    <li><a href="calderaMuralCondensacion.html">Calderas Murales de
+                                            Condensacion</a></li>
                                 </ul>
                             </li>
                         </ul>
-                    </a>
-                    <a href="contacto.html">
-                        <li>Contacto</li>
-                    </a>
+                    </li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
+
+
         </div>
     </header>
 
@@ -67,12 +70,23 @@
         </div>
 
         <section class="nuestrosServicios">
-            <h2>Nuestros Servicios</h2>
+            <h2>Calderas Murales</h2>
             <div class="contenedorServicios">
-
-                <img width="300px" src="../img/imagen3.jpg" alt="Imagen Calderas Murales">
-                <p>Instalacion</p>
-
+                <div class="contenedorCalderas">
+                    <div>
+                        <img class="imagenServicios" src="../img/calderaMural.jpg" alt="Imagen Calderas Murales">
+                        <p class="linkServicios">
+                            <a href="calderaMural.html">Calderas Murales</a>
+                        </p>
+                    </div>
+                    <div>
+                        <img class="imagenServicios" src="../img/calderaCondensacion.jpg"
+                            alt="Imagen Calderas Murales de Condensacion">
+                        <p class="linkServicios">
+                            <a href="calderaMuralCondensacion.html">Calderas de Condensación</a>
+                        </p>
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -81,35 +95,19 @@
     </main>
 
     <footer class="footer">
-        <div>
-            <p class="parrafoFooter">Todos los derechos reservados - Villanueva Calefaccion</p>
+        <div class="containerFooter">
+
+            <p class="parrafoFooter">Todos los derechos reservados<i class="far fa-copyright"></i> - Villanueva
+                Calefaccion</p>
 
             <a href="https://www.facebook.com/">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24"
-                    height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
-                </svg>
+                <i class="fab fa-facebook-f"></i>
             </a>
             <a href="https://www.instagram.com/">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24"
-                    height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <rect x="4" y="4" width="16" height="16" rx="4"></rect>
-                    <circle cx="12" cy="12" r="3"></circle>
-                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
-                </svg>
+                <i class="fab fa-instagram"></i>
             </a>
             <a href="https://www.youtube.com/">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="24"
-                    height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <rect x="3" y="5" width="18" height="14" rx="4"></rect>
-                    <path d="M10 9l5 3l-5 3z"></path>
-                </svg>
+                <i class="fab fa-youtube"></i>
             </a>
         </div>
     </footer>

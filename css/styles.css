@@ -2,7 +2,13 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    
 }
+ 
+* {
+    margin: 0;
+    padding: 0;
+} 
 
 *,
 *::before,
@@ -16,44 +22,114 @@ html {
 .header {
     background-color: #2b2b2b;
 }
+i {
+    padding-left: 1rem;
+}
 
 .logoIndex {
-    max-height: 10rem;
+    max-height: 8rem;
+    padding: 1rem;
 }
-.header a {
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    text-decoration:none ;
-    text-transform: uppercase;
-    list-style-type: none;
-    font-weight: 400;
-    font-size: 2rem;
 
-    
-    
+.containerNav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+.navegacion ul {
+    list-style: none;
+    font-size: 2rem;
+}
+
+.menuNavegacion > li {
+    position:relative;
+    display: inline-block;
+}
+
+.menuNavegacion > li > a {
+    display: block;
+    padding: .5rem 1rem;
+    color: white;
+    font-family: 'Poppins';
+    text-decoration: none;
+    border-radius: .3rem;
+}
+
+.menuNavegacion li a:hover{
+    color: #2b2b2b;
+    background-color: white;
+    transition: all .5s;
+}
+
+
+/* SUBMENU */
+.submenuServicios {
+    position: absolute;
+    background-color: #2b2b2b;
+    width: 30rem;
+    display: none;
+    border-radius: .5rem;
+}
+
+.submenuServicios li a{
+    display: block;
+    padding: .5rem 1rem;
+    color: white;
+    font-family: 'Poppins';
+    text-decoration: none;
+    border-radius: .2rem;
+    font-size: 1.8rem;
+}
+
+.menuNavegacion li:hover .submenuServicios {
+    display: block;
+    animation: grow .3s ease-in-out;
+}
+
+
+
+/* SUBMENU CALDERAS */
+
+.submenuServicios > li {
+    position: relative;
+}
+
+.submenuCalderas {
+    background-color: #2b2b2b;
+    width: 30rem;
+    display: none;
+    position: absolute;
+    top: 0;
+    left:30rem;
+}
+
+.submenuServicios li:hover .submenuCalderas {
+    display: block;
+    animation: grow .3s ease-in-out;
+}
+
+@keyframes grow {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 
 .imagenHeader {
     background-image: url(../img/header.jpg);
-    height: 15rem;
+    height: 2rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
-}
-
-.navegacion ul li a {
-    list-style-type: none;
-    text-decoration:none;
-}
-
-.ulNavegacion {
-    list-style-type: none;
-    text-decoration:none;
-    margin: 0;    
-}
-
-.servicios {
-    list-style-type: none;
 }
 
 
@@ -82,33 +158,40 @@ html {
 }
 
 .nuestrosServicios {
-    background-color: #2b2b2b;
-    font-family: 'Roboto';
+    background-color: #3d3d3d;
+    font-family: 'Poppins';
     color: white;
     text-align: center;
+    padding: 2rem auto;
 }
 
 .nuestrosServicios h2 {
     padding-top: 2rem;
     font-size: 3rem;
-    font-family: 'Roboto';
+    font-family: 'Poppins';
     font-weight: 700;
     margin: 0;
     padding-bottom: 2rem;
 }
-
-.nuestrosServicios p {
-    font-size: 2rem;
-    font-family: 'Poppins';
-    padding: 1rem;
-    margin:0;
+.contenedorServicios {
+    padding: 2rem;
 }
+.linkServicios {
+    padding: 1rem 0 2rem 0;
+}
+.linkServicios a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 2.5rem;
+}
+
 
 .nosotros {
     text-align: center;
     font-family: 'Poppins';
-    color: #2b2b2b;
-    background-color: white;
+    color: white;
+    background-color: #3b3b3b;
 }
 
 .nosotrosTitulo {
@@ -123,18 +206,20 @@ html {
 }
 
 .nosotrosParrafo {
+    width: 90rem;
     font-size: 1.8rem;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .imagenNosotros {
+    width: 60rem;
     margin: 0 auto;
     padding: 2rem;
 }
 
 
 .marcas {
-    background-color:#2b2b2b;
+    background-color: #3b3b3b;
     padding-bottom: 2rem;
 }
 .marcas h2 {
@@ -160,15 +245,65 @@ html {
 
 
 
+/* PAGINAS SERVICIOS */
+
+.tituloServicio {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+.imagenServicios {
+    width: 60rem;
+}
+.contenedorRadiadores {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contenedorCalderas {
+    display: flex;
+    gap: 1rem;
+}
+.contenedorCalderas img {
+   height: 60rem;
+   
+}
+
+.ventajas {
+    width: 90rem;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.ventajas li p{
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+.ventajas li span {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+
+
 
 /*--FORMULARIO--*/
 
 
 .formulario {
-    background-color: white;
+    background-color: #2b2b2b;
     padding: 2rem;
     margin: 0 auto;
-    color: #2b2b2b;
+    color: white;
+}
+.contenedorFormulario {
+    width: 90rem;
+    margin: 0 auto;
 }
 .formulario fieldset {
     border: none;
@@ -182,26 +317,92 @@ html {
     font-weight: 700;
     font-size: 3rem;
     text-transform: uppercase;
-    color: #2b2b2b;
+    color: white;
+}
+.formulario label{
+    color: white;
+    font-family: 'Poppins';
+    width: 30rem;
+    text-align: left;
+}
+.formulario input{ 
+    font-family: 'Poppins';
+}
+
+.formulario textarea {
+    font-family: 'Poppins';
 }
 .campo {
-    padding: .5rem;
+    display: flex;
+    margin: 0 auto;
+    padding: .5rem 1rem;
     color: #2b2b2b;
-    max-width: 100%;
     font-size: 2rem;
+}
+
+.containerRadio,
+.containerCheckbox,
+.containerSelect {
+    margin: 0 auto;
+    padding: .5rem 1rem;
+    color: #2b2b2b;
+    font-size: 2rem;
+}
+.containerRadio label,
+input {
+    margin-right: 1rem;
+}
+.campoInput {
+    width: 100%;
+    margin: 0;
+}
+
+.contendedorBotones {
+    display: flex;
+    margin-top: 2rem;
+}
+.boton {
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    width: 30rem;
+    margin: 0;
+    color: #2b2b2b;
+}
+.boton:hover {
+    background-color: #3b3b3b;
+    color: white;
 }
 
 
 /*--FOOTER--*/
 
+.containerFooter {
+    display: flex;
+}
+
 .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #2b2b2b;
     color: white;
     text-align: center;
     font-family: 'Poppins';
     font-size: 1.5rem;
+    height: 5rem;
 }
 
+.containerFooter a {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding-left: 1.1rem;
+}
+
+.fa-copyright {
+    padding-left: .1rem;
+    font-size: 1.2rem;
+}
 .footer svg {
     color: white;
 }
