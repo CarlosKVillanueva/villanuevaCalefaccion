@@ -46,6 +46,7 @@ i {
     display: inline-block;
 }
 
+
 .menuNavegacion > li > a {
     display: block;
     padding: .5rem 1rem;
@@ -174,8 +175,23 @@ i {
     padding-bottom: 2rem;
 }
 .contenedorServicios {
-    padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    column-gap: 2rem;
 }
+
+@media(min-width:1024px) {
+    .contenedorServicios{
+        grid-template-columns: repeat(2, 1fr) ;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+
 .linkServicios {
     padding: 1rem 0 2rem 0;
 }
