@@ -64,10 +64,14 @@ i {
 
 
 /* SUBMENU */
+
+
+
+
 .submenuServicios {
     position: absolute;
     background-color: #2b2b2b;
-    width: 30rem;
+    width: 28rem;
     display: none;
     border-radius: .5rem;
 }
@@ -78,7 +82,7 @@ i {
     color: white;
     font-family: 'Poppins';
     text-decoration: none;
-    border-radius: .2rem;
+    border-radius: .3rem;
     font-size: 1.8rem;
 }
 
@@ -97,11 +101,12 @@ i {
 
 .submenuCalderas {
     background-color: #2b2b2b;
-    width: 30rem;
+    width: 28rem;
     display: none;
     position: absolute;
+    border-radius: .3rem;
     top: 0;
-    left:30rem;
+    left:28rem;
 }
 
 .submenuServicios li:hover .submenuCalderas {
@@ -175,7 +180,7 @@ i {
     padding-bottom: 2rem;
 }
 .contenedorServicios {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -183,12 +188,21 @@ i {
     column-gap: 2rem;
 }
 
-@media(min-width:1024px) {
+@media(min-width:768px) {
     .contenedorServicios{
         grid-template-columns: repeat(2, 1fr) ;
         justify-content: center;
         margin: 0 auto;
     }
+    
+}
+@media(min-width:1200px) {
+    .contenedorServicios{
+        grid-template-columns: repeat(4, 1fr) ;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
 }
 
 
@@ -203,41 +217,104 @@ i {
 }
 
 
+
+/* NOSOTROS */
+
+
+
 .nosotros {
+    padding: 2rem;
     text-align: center;
     font-family: 'Poppins';
     color: white;
-    background-color: #3b3b3b;
+    background-color: #2b2b2b;
+    
+}
+.contenedorNosotros {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+    grid-gap: 2rem;
+}
+.contenedorNosotrosTexto {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    
+    grid-row: 1 / 2;
 }
 
 .nosotrosTitulo {
     font-weight: 400;
-    margin: 0;
     padding: 1rem;
     font-size: 3rem;
-    
 }
 .nosotrosTitulo span {
     font-weight: 700;
 }
 
 .nosotrosParrafo {
-    width: 90rem;
     font-size: 1.8rem;
-    margin: 0 auto;
+    line-height: 2.5rem;
 }
 
 .imagenNosotros {
-    width: 60rem;
-    margin: 0 auto;
-    padding: 2rem;
+    width: 100%;
+}
+
+@media (min-width:1024px) {
+    .contenedorNosotros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contenedorNosotrosTexto {
+        grid-column: 2 / 3;
+    }
 }
 
 
+
+/* MARCAS */
+
+
+ 
 .marcas {
     background-color: #3b3b3b;
     padding-bottom: 2rem;
 }
+.contenedorMarcas > img {
+   height: 5rem;
+}
+.contenedorMarcas{
+    padding: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    background-color: white;
+}
+
+@media (min-width:768px) {
+    .contenedorMarcas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contenedorMarcas img {
+        height: 8rem;
+    }
+}
+@media (min-width:1024px) {
+    .contenedorMarcas {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width:1200px) {
+    .contenedorMarcas {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
 .marcas h2 {
     font-size: 3rem;
     margin: 0 auto;
@@ -252,12 +329,7 @@ i {
     font-weight: 700;
 }
 
-.marcas img {
 
-    display: block;
-    margin: 0 auto 2rem auto;
-    background-color: white;
-}
 
 
 
@@ -269,7 +341,7 @@ i {
     font-size: 3rem;
 }
 .imagenServicios {
-    width: 60rem;
+    width: 100%;
 }
 .contenedorRadiadores {
     width: 90%;
@@ -318,7 +390,8 @@ i {
     color: white;
 }
 .contenedorFormulario {
-    width: 90rem;
+    width: 90%;
+    max-width: 90rem;
     margin: 0 auto;
 }
 .formulario fieldset {
@@ -343,10 +416,16 @@ i {
 }
 .formulario input{ 
     font-family: 'Poppins';
+    background-color: #424242;
+    border: none;
+    color: rgb(173, 173, 173);
 }
 
 .formulario textarea {
     font-family: 'Poppins';
+    background-color: #424242;
+    border: none;
+    color: rgb(173, 173, 173);
 }
 .campo {
     display: flex;
@@ -375,8 +454,16 @@ input {
 
 .contendedorBotones {
     display: flex;
+    flex-direction: column;
     margin-top: 2rem;
 }
+@media (min-width:768px) {
+    .contendedorBotones {
+        flex-direction: row;
+    }
+}
+
+
 .boton {
     font-size: 2rem;
     padding: 2rem 1rem;
